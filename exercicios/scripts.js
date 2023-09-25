@@ -1,5 +1,5 @@
 // inicializar a array vazia
-const numeros = [];
+var numeros = [];
 
 // pegar elemento html, adicionar o ouvinte ao botão
 document.getElementById("adicionar").addEventListener("click", function () {
@@ -46,5 +46,7 @@ function exibirNumerosOrdenados(numerosOrdenados) {
 clearBtn.addEventListener("click", function (){
     resultadoOrdenado.innerHTML = " ";
     listaNumeros.innerHTML = "";
-    numeros = {}
+    numeros = []
 })
+
+// substituir a lista desordenada pela ordenada ao invés de limpar

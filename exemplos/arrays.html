@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <button onclick="carregar()">Carregar</button>
+    <hr>
+    <ul>
+        <!--Pegar os dados do array-->
+    </ul>
+
+    <script>
+        var frutas = ["maça","pera","tangerina","bergamota"]
+        /*console.log(frutas)
+
+        frutas.push("laranja")
+        console.log(frutas)
+
+        frutas.unshift("Limão")
+        console.log(frutas)
+
+        frutas.pop()
+        console.log(frutas)
+
+        frutas.shift()
+        console.log(frutas)*/
+       /* console.log(frutas.length)
+        var size = frutas.length
+            for(let i = 0; i < size; i++){
+                console.log(frutas[i])
+            }
+        */
+
+        function carregar(){
+            var size = frutas.length
+            var itens = ''
+            for(let i = 0; i < size; i++){
+               itens += `<li>${frutas[i]}</li>`
+            }
+            document.getElementsByTagName('ul')[0].innerHTML = itens
+        }
+    </script>
+</body>
+</html>

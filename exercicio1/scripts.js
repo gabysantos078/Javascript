@@ -47,6 +47,4 @@ clearBtn.addEventListener("click", function (){
     resultadoOrdenado.innerHTML = " ";
     listaNumeros.innerHTML = "";
     numeros = []
-})
-
-// substituir a lista desordenada pela ordenada ao invés de limpar
+});

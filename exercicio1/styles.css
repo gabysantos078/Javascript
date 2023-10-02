@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+/* Estilos para a seção de entrada de números */
+#numero {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#adicionar,
+#ordenar,
+#clearBtn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#adicionar:hover,
+#ordenar:hover,
+#clearBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a lista de números */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaNumeros li,
+#resultadoOrdenado li {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

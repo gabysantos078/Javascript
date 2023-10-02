@@ -1,35 +1,38 @@
-//array para armazenar frutas
+// Array para armazenar frutas
 const frutas = [];
 
-//obter elementos do HTML
-const fruta = document.getElementById('fruta');
-const adicionarFrutas = document.getElementById('Add');
-const clearBtn = document.getElementById('clearBtn')
-const lista = document.getElementById('listFrutas')
+// Obter elementos do HTML
+const frutaInput = document.getElementById('fruta');
+const adicionarFrutasBtn = document.getElementById('Add');
+const clearBtn = document.getElementById('clearBtn');
+const lista = document.getElementById('listFrutas');
 
-adicionarFrutas.addEventListener('click', function () {
-    const novaFruta = fruta.value.toLowerCase();
+adicionarFrutasBtn.addEventListener('click', function () {
+    const novaFruta = frutaInput.value.trim().toLowerCase();
    
     // Verifica se a fruta já está na lista
-    if (!frutas.includes(novaFruta)) {
+    if (!frutas.includes(novaFruta) && novaFruta !== "") {
         frutas.push(novaFruta);
-        var size = frutas.length;
-        var itens = '';
-
-        for (let i = 0; i < size; i++) {
-            itens += `<li>${frutas[i]}</li>`;
-        }
-
-        const ulElement = document.querySelector('ul');
-        ulElement.innerHTML = itens;
-
-        // Limpar o conteúdo do input após a adição da fruta
-        fruta.value = "";
+        atualizarListaDeFrutas();
+        
+        frutaInput.value = ""; // Limpar o conteúdo do input após a adição da fruta
+    } else if (novaFruta === "") {
+        alert("Por favor, insira o nome da fruta.");
     } else {
         alert("Essa fruta já está na lista!");
     }
 });
 
-clearBtn.addEventListener("click", function (){
-    lista.innerHTML = " ";
-})
+clearBtn.addEventListener("click", function () {
+    frutas.length = 0; // Limpa o array de frutas
+    atualizarListaDeFrutas();
+});
+
+function atualizarListaDeFrutas() {
+    lista.innerHTML = ""; // Limpa a lista existente
+    frutas.forEach(function (fruta) {
+        const li = document.createElement("li");
+        li.textContent = fruta;
+        lista.appendChild(li);
+    });
+}

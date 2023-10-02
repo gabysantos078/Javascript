@@ -1,0 +1,93 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilos para os botões e campos de entrada */
+input[type="number"],
+button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para as listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para as seções de recursos adicionais */
+#numero-encontrar,
+#numero-remover,
+#numero-antigo,
+#numero-novo {
+    width: 200px;
+}
+
+#encontrar,
+#remover,
+#substituir {
+    margin-top: 10px;
+}
+
+/* Estilos para a seção de resultados ordenados */
+#resultadoOrdenado {
+    margin-top: 20px;
+    border-top: 2px solid #007BFF;
+    padding-top: 10px;
+}
+
+/* Limpeza de lista */
+#clearBtn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+}
+
+#clearBtn:hover {
+    background-color: #cc0000;
+}

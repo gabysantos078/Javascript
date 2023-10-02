@@ -1,0 +1,59 @@
+#cadastroForm {
+    width: 300px;
+    margin: 20px auto;
+}
+legend{
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    color:black;
+    font-size: 1.2em;  
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+button {
+    background-color:green;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Estilos para a tabela de contatos */
+#tabelaContatos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabelaContatos th,
+#tabelaContatos td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+#tabelaContatos th {
+    background-color: green;
+    color: #fff;
+}
+
+#tabelaContatos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tabelaContatos tr:hover {
+    background-color: #ddd;
+}
